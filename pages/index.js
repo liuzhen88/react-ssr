@@ -7,7 +7,9 @@ class Index extends React.Component{
         return (
             <div>
                 <span>hello world next.js</span>
-                <Link href='/about'>to about</Link>
+                <Link href='/about'>
+                	<a>to about</a>
+                </Link>
             </div>
         )
     }
