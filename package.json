@@ -1,0 +1,25 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "react在服务器端渲染",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuzhen88/react-ssr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuzhen88/react-ssr/issues"
+  },
+  "homepage": "https://github.com/liuzhen88/react-ssr#readme",
+  "dependencies": {
+    "next": "^2.4.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
