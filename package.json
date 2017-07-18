@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,13 @@
   },
   "homepage": "https://github.com/liuzhen88/react-ssr#readme",
   "dependencies": {
+    "express": "^4.15.3",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^2.4.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

@@ -1,17 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
-import fetch from 'isomorphic-unfetch';
 
 class About extends React.Component{
-	static getInitialProps() {	 
+	static getInitialProps(req) { 
 		return {
-			msg:'这是SPA单页面about路由'
+			msg:req.query.title
 		}
 	}
     render(){
         return (
         	<div>
-            	<div>about page from {this.props.msg}</div>
+            	<div>{this.props.msg}</div>
         	</div>
         )
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Link from 'next/link';
+import fetch from 'isomorphic-unfetch';
 
 class Index extends React.Component{
 	static async getInitialProps({req, res}) {
@@ -19,7 +20,7 @@ class Index extends React.Component{
                 	<a>to about</a>
                 </Link>
                 <div>========================================</div>
-                <div>about page from {this.props.msg}{this.props.code}</div>
+                <div>{this.props.msg}</div>
                 <div>========================================</div>
                 {
         			this.props.data.TrafficStations.map(function(item){
